@@ -4,8 +4,6 @@ import java.util.*;
 
 public class HeapSet<V extends Comparable<? super V>> extends HeapMap<V, V> {
 
-    private int uniqueID = Integer.MIN_VALUE;
-
     public HeapSet(){
         super(null, s -> s);
     }

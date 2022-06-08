@@ -53,7 +53,7 @@ public class BalancedUnionFind<E> implements UnionFind<E> {
         numSets--;
         int rankI = ranks.get(rootI);
         int rankJ = ranks.get(rootJ);
-        if ( rankI >= rankJ) {
+        if (rankI >= rankJ) {
             parent.put(rootJ, rootI);
             if (rankI == rankJ) ranks.merge(rootI, 1, Integer::sum);
             postUnion(rootJ, rootI);
